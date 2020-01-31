@@ -81,7 +81,6 @@ wget http://maltinerecords.cs8.biz/SKLxMARU-001.zip
 xdg-open http://smarturl.it/aijpho 1>/dev/null 2>/dev/null
 ############################################################################################### MARU×AM↑
 
-
 ############################################################################################### MARU↓
 # MARU-{6..8} {10..99} {101..109} {111..127} {141..143}
 for i in {6..8} {10..99} {101..109} {111..127} {141..143}; do 
@@ -138,7 +137,6 @@ for i in 169 170; do
   wget http://maltinerecords-m.cs8.biz/$i/MARU-$i.zip
 done
 ############################################################################################### MARU↑
-
 
 # DEBUG: Checking lack of numbers
 diff <(seq -w 3 1 $LATEST) <(ls|egrep -o '[0-9]+'|sort -n)|grep \<
