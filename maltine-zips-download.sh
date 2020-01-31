@@ -3,7 +3,11 @@
 # UPDATE: 2019-11-29
 # NOTE: Downloaded data is following CC BY-NC 2.1(https://creativecommons.org/licenses/by-nc/2.1/jp/legalcode)
 # RECOMEND: when you decompose those files, do: ls|xargs -P 30 -I@ unar @ 
-LATEST=176
+LATEST="$(
+  curl -s 'http://maltinerecords.cs8.biz/release.html'|
+    grep -oEm1 'MARU-[0-9]+'|
+      grep -oE '[0-9]+'
+)"
 ###############################
 mkdir -p MALTINE_ALL_ALBUMS_ZIP
 cd MALTINE_ALL_ALBUMS_ZIP
