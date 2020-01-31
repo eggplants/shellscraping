@@ -34,4 +34,4 @@ gistに上げているスクレイピングコードのまとめを、したい�
   - [language.yml](https://raw.githubusercontent.com/github/linguist/master/lib/linguist/languages.yml)の切り出し
   - ワンライナー
 - maltine-zips-download.sh
-  - `maltinerecords`のDL可能全トラックをダウンロードしZIPにまとめる
+  - `maltinerecords`のDL可能全アルバム/トラックをダウンロードしZIPにまとめる
