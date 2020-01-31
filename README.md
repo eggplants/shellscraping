@@ -1,0 +1,37 @@
+# shellscraping
+gistに上げているスクレイピングコードのまとめを、したいなあ
+# contents
+- all-clone
+  - `GitHub`特定ユーザ公開リポジトリの全cloneを実行
+  - `https://api.github.com/users/[github_userid]/repos`を叩いている
+- all-clone-gist.sh
+  - `GitHub Gist`特定ユーザ公開gistリポジトリの全cloneを実行
+  - `https://api.github.com/users/[github_userid]/gists?page=[p]`を叩いている
+- band-all.sh
+  - `Bandcamp`特定ユーザの全アルバム視聴用音源のダウンロード
+  - [iheanyi/bandcamp-dl](https://github.com/iheanyi/bandcamp-dl)のラッパー
+- hubsearch.sh
+  - `GitHub`の検索
+  - `https://github.com/search?q=[query]`の整形
+- link-L1.sh
+  - `maltinerecords`のリリースページ内hrefを全抽出
+- link-L2.sh
+  - `maltinerecords`のリリースページ内hrefを全抽出
+  - 抽出したAlbumページからアーカイブ/トラックファイルURIを抽出
+- lyric-extractor.sh
+  - 歌詞サイトから歌詞を抽出
+  - 対応サイト:
+    - http://j-lyric.net/
+    - https://www.uta-net.com/
+    - https://utaten.com/
+    - http://www.kget.jp/
+    - https://genius.com/
+  - 未対応サイト:
+    - https://kashinavi.com/
+    - https://www.utamap.com/
+- makelist.sh
+  - `GitHub`シンタックスハイライト対応済み言語の一覧取得
+  - [language.yml](https://raw.githubusercontent.com/github/linguist/master/lib/linguist/languages.yml)の切り出し
+  - ワンライナー
+- maltine-zips-download.sh
+  - `maltinerecords`のDL可能全トラックをダウンロードしZIPにまとめる
