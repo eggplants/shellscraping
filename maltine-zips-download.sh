@@ -1,6 +1,6 @@
 #!/bin/bash
 # CREATE: 2019-11-28
-# UPDATE: 2019-11-29
+# UPDATE: 2020-01-31
 # NOTE: Downloaded data is following CC BY-NC 2.1(https://creativecommons.org/licenses/by-nc/2.1/jp/legalcode)
 # RECOMEND: when you decompose those files, do: ls|xargs -P 30 -I@ unar @ 
 
