@@ -1,37 +1,44 @@
 # shellscraping
-gistに上げているスクレイピングコードのまとめを、したいなあ
+This repository collects my scraping codes which I uploaded on [My Gist] **written in Bash**.
+[日本語版READMEはこちら]
 # contents
 - all-clone
-  - `GitHub`特定ユーザ公開リポジトリの全cloneを実行
-  - `https://api.github.com/users/[github_userid]/repos`を叩いている
+  - Execute cloning **all public repos** of a specific user.
+  - This uses `https://api.github.com/users/[github_userid]/repos` API.
 - all-clone-gist.sh
-  - `GitHub Gist`特定ユーザ公開gistリポジトリの全cloneを実行
-  - `https://api.github.com/users/[github_userid]/gists?page=[p]`を叩いている
+  - Execute cloning **all Gist public repos** of a specific user.
+  - This uses `https://api.github.com/users/[github_userid]/gists?page=[p]` API
 - band-all.sh
-  - `Bandcamp`特定ユーザの全アルバム視聴用音源のダウンロード
-  - [iheanyi/bandcamp-dl](https://github.com/iheanyi/bandcamp-dl)のラッパー
+  - Download **all Albums of a specipic user** from `Bandcamp`.
+  - Fetch user's Albums from `https://<username>.bandcamp.com/music`.
+    - `$ ./band-all.sh sabacanrecords`
+  - [iheanyi/bandcamp-dl](https://github.com/iheanyi/bandcamp-dl) Wrapper
 - hubsearch.sh
-  - `GitHub`の検索
-  - `https://github.com/search?q=[query]`の整形
+  - Search `GitHub`.
+  - Scrape `https://github.com/search?q=[query]`.
 - link-L1.sh
-  - `maltinerecords`のリリースページ内hrefを全抽出
+  - Extract **elements `href` from [maltinerecords/release]**.
 - link-L2.sh
-  - `maltinerecords`のリリースページ内hrefを全抽出
-  - 抽出したAlbumページからアーカイブ/トラックファイルURIを抽出
+  - A LEVEL=2 version of `link-L1.sh`.
+  - Extract **Archive / Track File URI** from the extracted Album pages.
 - lyric-extractor.sh
-  - 歌詞サイトから歌詞を抽出
-  - 対応サイト:
+  - Extract **lyrics from lyrics site**
+  - Available sites:
     - http://j-lyric.net/
     - https://www.uta-net.com/
     - https://utaten.com/
     - http://www.kget.jp/
     - https://genius.com/
-  - 未対応サイト:
+  - Unavailable sites:
     - https://kashinavi.com/
     - https://www.utamap.com/
 - makelist.sh
-  - `GitHub`シンタックスハイライト対応済み言語の一覧取得
-  - [language.yml](https://raw.githubusercontent.com/github/linguist/master/lib/linguist/languages.yml)の切り出し
-  - ワンライナー
+  - Get **a list of languages** that GitHub supports syntax highlighting.
+  - Source: [language.yml](https://raw.githubusercontent.com/github/linguist/master/lib/linguist/languages.yml)
+  - One-linear
 - maltine-zips-download.sh
-  - `maltinerecords`のDL可能全アルバム/トラックをダウンロードしZIPにまとめる
+  - Download **DL-able albums / tracks** of [maltinerecords] and **compile them into a ZIP**.
+
+[日本語版READMEはこちら]: https://github.com/eggplants/shellscraping/blob/master/README_ja.md
+[My Gist]: https://gist.github.com/eggplants
+[maltinerecords]: http://maltinerecords.cs8.biz/release.html
