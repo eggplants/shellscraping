@@ -9,7 +9,7 @@ This repository collects my scraping codes which I uploaded on [My Gist] **writt
   - Execute cloning **all Gist public repos** of a specific user.
   - This uses `https://api.github.com/users/[github_userid]/gists?page=[p]` API
 - band-all.sh
-  - Download **all Albums of a specipic user** from `Bandcamp`.
+  - Download **all Albums of a specific user** from `Bandcamp`.
   - Fetch user's Albums from `https://<username>.bandcamp.com/music`.
     - `$ ./band-all.sh sabacanrecords`
   - [iheanyi/bandcamp-dl](https://github.com/iheanyi/bandcamp-dl) Wrapper
@@ -22,7 +22,7 @@ This repository collects my scraping codes which I uploaded on [My Gist] **writt
   - A LEVEL=2 version of `link-L1.sh`.
   - Extract **Archive / Track File URI** from the extracted Album pages.
 - lyric-extractor.sh
-  - Extract **lyrics from lyrics site**
+  - Extract **lyrics from a lyrics site**
   - Available sites:
     - http://j-lyric.net/
     - https://www.uta-net.com/
@@ -37,7 +37,7 @@ This repository collects my scraping codes which I uploaded on [My Gist] **writt
   - Source: [language.yml](https://raw.githubusercontent.com/github/linguist/master/lib/linguist/languages.yml)
   - One-linear
 - maltine-zips-download.sh
-  - Download **DL-able albums / tracks** of [maltinerecords] and **compile them into a ZIP**.
+  - Download **DL-able albums/tracks** of [maltinerecords] and **compile them into a ZIP**.
 
 [日本語版READMEはこちら]: https://github.com/eggplants/shellscraping/blob/master/README_ja.md
 [My Gist]: https://gist.github.com/eggplants
