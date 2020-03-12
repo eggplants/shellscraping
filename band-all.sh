@@ -5,53 +5,51 @@
 
 
 trap interrupt INT
-interrupt(){ echo;cd "$p";exit 1;}
+interrupt(){ echo;cd "$p" || return;exit 1;}
 
 #################
 savedir="${HOME}/Music"
 #################
 
-p="`pwd`"
+p="$(pwd)"
 _check(){
-  [ -z "`which bandcamp-dl`" ]&&{
+  if [ -z "$(which bandcamp-dl)" ];then
     echo -e "You should try this:\npip3 install bandcamp-downloader\nOr, configure PATH:" 1>&2
     return 1
-  }
-  [ -z "$@" ]&&{
+  elif [ -z "$@" ];then
     echo -e "Target userid is missing." 1>&2
     return 1
-  }
-  [ -n "`curl -s https://${1}.bandcamp.com/music|grep 'Sorry, that something isn’t here.'`" ]&&{
+  elif curl -s "https://${1}.bandcamp.com/music" | grep -q 'Sorry, that something isn’t here.';then
     echo -e "Target user store does not exist." 1>&2
     return 1
-  }
-  [ -n "`curl -s https://${1}.bandcamp.com/music|grep 'No tracks here yet.'`" ]&&{
+  elif curl -s "https://${1}.bandcamp.com/music" | grep -q 'No tracks here yet.';then
     echo -e "Target user have not upload albums yet." 1>&2
     return 1
-  }
-  return 0
+  else
+    return 0
+  fi
 }
 _main(){
   ##########
   mkdir -p "${savedir}"
-  cd "${savedir}"
+  cd "${savedir}" || return
   ##########
    url="https://${1}.bandcamp.com/"
    misc="`
       curl -s "${url}music"|
-       egrep -o '(album|track)/[^"]+'|
+       grep -oE '(album|track)/[^"]+'|
        sed "s_^_${url}_g"
        `"
-  echo "$(echo "$misc"|wc -l) ${1}'s work(s) was found."
+  echo "$(echo \"${misc}\"|wc -l) ${1}'s work(s) was found."
 
-  for i in `echo $misc`; do
+  for i in ${misc}; do
     echo -ne "Now Downloading:\n    ${i}"
     bandcamp-dl -f "${i}" 1>/dev/null 2>/dev/null
     echo "=>finished."
   done
-  cd "$p"
+  cd "$p" || return
   return 0
 }
 
-_check $@; ret="$?"
-[ "$ret" = 0 ]&&_main $@
+_check "$@"; ret="$?"
+[ "$ret" = 0 ]&&_main "$@"
