@@ -38,6 +38,20 @@ This repository collects my scraping codes which I uploaded on [My Gist] **writt
   - One-linear
 - maltine-zips-download.sh
   - Download **DL-able albums/tracks** of [maltinerecords] and **compile them into a ZIP**.
+- Ricty_on_wsl.sh
+- forkpull.sh
+- ikkatu_posix.sh
+- install_latest_nano_wsl.sh
+- kkcwx.sh
+- kkcwx_short.sh
+- machikado.sh
+- make_posix_cmds.sh
+- make_qiitalang_list.sh
+- my_urlize.sh
+- ping_trace.sh
+- shchc.sh
+- spd-say-rand.sh
+- twaccown.sh
 
 [日本語版READMEはこちら]: https://github.com/eggplants/shellscraping/blob/master/README_ja.md
 [My Gist]: https://gist.github.com/eggplants
