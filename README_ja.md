@@ -35,3 +35,17 @@ gistに上げているスクレイピングコードのまとめを、したい�
   - ワンライナー
 - maltine-zips-download.sh
   - `maltinerecords`のDL可能全アルバム/トラックをダウンロードしZIPにまとめる
+- Ricty_on_wsl.sh
+- forkpull.sh
+- ikkatu_posix.sh
+- install_latest_nano_wsl.sh
+- kkcwx.sh
+- kkcwx_short.sh
+- machikado.sh
+- make_posix_cmds.sh
+- make_qiitalang_list.sh
+- my_urlize.sh
+- ping_trace.sh
+- shchc.sh
+- spd-say-rand.sh
+- twaccown.sh
