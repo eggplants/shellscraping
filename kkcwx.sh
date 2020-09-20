@@ -2,8 +2,8 @@
 ########
 # help #
 ########
-function help(){
-  cat<<"EOS"
+function help() {
+  cat <<"EOS"
 kkcwx - 0.0.1 2019-
 MIT License.
 kkcwx is conversion (hiragana -> kanji) command.
@@ -33,20 +33,20 @@ EOS
 ###########
 # PROCESS #
 ###########
-function process(){
+function process() {
 
-  for s in $(cat - );do
+  cat - | while read -r s; do
     # kkcに入力, 出力をsedで整形
     echo "$s" | kkc |
-    sed -nr 's@[^<]*<([^>/]*)[^<]+@\1@gp' 
+      sed -nr 's@[^<]*<([^>/]*)[^<]+@\1@gp'
   done
 }
 ########
 # main #
 ########
-function main(){
+function main() {
   [[ "$1" =~ --help|-h ]] && help
-  ([[ "$#" > 0 ]] && echo "$@" || cat - )| process
+  ([[ "$#" -gt 0 ]] || cat - && echo "$@") | process
   exit 0
 }
 

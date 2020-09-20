@@ -1,13 +1,13 @@
 #!/bin/bash
-process(){
-for s in $(cat - );do
-  echo "$s"|kkc|
-  sed -nr '
+process() {
+  cat - | while read -r s; do
+    echo "$s" | kkc |
+      sed -nr '
   s@.:\s|>>\s@@g
   s@<([^/]+)/[^>]+>@\1@gp'
-done
+  done
 }
-main(){
-([[ "$#" > 0 ]] && echo "$@" || cat - )| process
+main() {
+  ([[ "$#" -gt 0 ]] || cat - && echo "$@") | process
 }
 main "$@"

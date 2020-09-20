@@ -1,6 +1,9 @@
 # shellscraping
+
 gistに上げているスクレイピングコードのまとめを、したいなあ
-# contents
+
+## contents
+
 - all-clone
   - `GitHub`特定ユーザ公開リポジトリの全cloneを実行
   - `https://api.github.com/users/[github_userid]/repos`を叩いている
@@ -21,13 +24,13 @@ gistに上げているスクレイピングコードのまとめを、したい�
 - lyric-extractor.sh
   - 歌詞サイトから歌詞を抽出
   - 対応サイト:
-    - http://j-lyric.net/
-    - https://www.uta-net.com/
-    - https://utaten.com/
-    - http://www.kget.jp/
-    - https://genius.com/
-    - https://kashinavi.com/
-    - https://www.utamap.com/
+    - [j-lylic](http://j-lyric.net/)
+    - [歌ネット](https://www.uta-net.com/)
+    - [UtaTen](https://utaten.com/)
+    - [歌詞GET](http://www.kget.jp/)
+    - [Genius](https://genius.com/)
+    - [歌詞ナビ](https://kashinavi.com/)
+    - [うたまっぷ](https://www.utamap.com/)
 - makelist.sh
   - `GitHub`シンタックスハイライト対応済み言語の一覧取得
   - [language.yml](https://raw.githubusercontent.com/github/linguist/master/lib/linguist/languages.yml)の切り出し

@@ -5,7 +5,7 @@
 ############################
 
 ############################
-      name="eggplants"
+name="eggplants"
 ############################
 
 if [ ${EUID:-${UID}} != 0 ]; then
@@ -24,10 +24,10 @@ pagesize="$((size / 10 + 1))"
 id=()
 echo "[-]Now fetching ids of repo(s)..."
 for ((p = 1; p <= pagesize; p++)); do
-	id+=($(
+	id+=("$(
 		curl -s "https://api.github.com/users/${name}/gists?page=${p}" |
 			grep -oE '"id": "[^"]+' | cut -b8-
-	))
+	)")
 done
 
 echo "    =>${size} public repo(s) was found."

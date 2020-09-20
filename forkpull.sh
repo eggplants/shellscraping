@@ -1,5 +1,5 @@
 #!/bin/bash
-function forkpull () {
+function forkpull() {
         giturl="$1"
         echo -n "original git URL of own fork repo >>>"
         [[ -z ${giturl} ]] && read -r giturl

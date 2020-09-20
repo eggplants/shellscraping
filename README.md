@@ -1,7 +1,10 @@
 # shellscraping
+
 This repository collects my scraping codes which I uploaded on [My Gist] **written in Bash**.
 [日本語版READMEはこちら]
-# contents
+
+## contents
+
 - all-clone
   - Execute cloning **all public repos** of a specific user.
   - This uses `https://api.github.com/users/[github_userid]/repos` API.
@@ -25,13 +28,13 @@ This repository collects my scraping codes which I uploaded on [My Gist] **writt
   - Extract **lyrics from a lyrics site** by using:
     - `grep`, `curl`, `sed`, `tr`, `iconv`, `ruby`
   - Available sites:
-    - http://j-lyric.net/
-    - https://www.uta-net.com/
-    - https://utaten.com/
-    - http://www.kget.jp/
-    - https://genius.com/
-    - https://kashinavi.com/
-    - https://www.utamap.com/
+    - [j-lylic](http://j-lyric.net/)
+    - [uta-net](https://www.uta-net.com/)
+    - [utaten](https://utaten.com/)
+    - [kget](http://www.kget.jp/)
+    - [genius](https://genius.com/)
+    - [kashinavi](https://kashinavi.com/)
+    - [utamap](https://www.utamap.com/)
 - makelist.sh
   - Get **a list of languages** that GitHub supports syntax highlighting.
   - Source: [language.yml](https://raw.githubusercontent.com/github/linguist/master/lib/linguist/languages.yml)
@@ -66,6 +69,9 @@ This repository collects my scraping codes which I uploaded on [My Gist] **writt
   - Execute the `spd-say` command in a random voice.
 - twaccown.sh
   - Extract twitter account ids from Ownedmedia pages
+
 [日本語版READMEはこちら]: https://github.com/eggplants/shellscraping/blob/master/README_ja.md
+
 [My Gist]: https://gist.github.com/eggplants
+
 [maltinerecords]: http://maltinerecords.cs8.biz/release.html
