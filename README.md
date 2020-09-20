@@ -42,13 +42,13 @@ This repository collects my scraping codes which I uploaded on [My Gist] **writt
 - maltine-zips-download.sh
   - Download **DL-able albums/tracks** of [maltinerecords] and **compile them into a ZIP**.
 - Ricty_on_wsl.sh
-  - Building Ricty font.
+  - Build Ricty font.
 - forkpull.sh
-  - Importing commits from the parent repository into your fork.
+  - Import commits from the parent repository into your fork.
 - ikkatu_posix.sh
   - Install all standard commands listed in POSIX.
 - install_latest_nano_wsl.sh
-  - Installing the latest version of the GNU Nano on WSL.
+  - Install the latest version of the GNU Nano on WSL.
 - kkcwx.sh
   - Make `kkc` command more easier to use.
 - kkcwx_short.sh
@@ -56,19 +56,19 @@ This repository collects my scraping codes which I uploaded on [My Gist] **writt
 - machikado.sh
   - Make list.md of Machikado mazoku Promade List.
 - make_posix_cmds.sh
-  - Translating and outputting the list of standard commands listed in POSIX.
+  - Translate and outputting the list of standard commands listed in POSIX.
 - make_qiitalang_list.sh
   - Tally up the number of articles per all languages, for which Qiita supports syntax highlighting.
 - my_urlize.sh
-  - Formatting input into base64 links to shorten and paste long text data onto Twitter.
+  - Format input into base64 links to shorten and paste long text data onto Twitter.
 - ping_trace.sh
   - Show the result of the `ping` command in a clear way.
 - shchc.sh
-  - Shellchecking easily.
+  - Shellcheck easily.
 - spd-say-rand.sh
   - Execute the `spd-say` command in a random voice.
 - twaccown.sh
-  - Extract twitter account ids from Ownedmedia pages
+  - Extract twitter account ids from [Ownedmedia](https://ownedmedia-library.com/) pages
 
 [日本語版READMEはこちら]: https://github.com/eggplants/shellscraping/blob/master/README_ja.md
 

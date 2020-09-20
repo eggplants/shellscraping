@@ -38,17 +38,30 @@ gistに上げているスクレイピングコードのまとめを、したい�
 - maltine-zips-download.sh
   - `maltinerecords`のDL可能全アルバム/トラックをダウンロードしZIPにまとめる
 - Ricty_on_wsl.sh
-
+  - Rictyフォントをビルド
 - forkpull.sh
+  - 親リポジトリのコミットをフォークにインポート
 - ikkatu_posix.sh
+  - POSIXに記載されている全ての標準コマンドをインストール
 - install_latest_nano_wsl.sh
+  - GNU Nanoの最新バージョンをWSLにインストール
 - kkcwx.sh
+  - `kkc` コマンドをより使いやすく
 - kkcwx_short.sh
+  - kkcwx.shの短縮版
 - machikado.sh
+  - まちかどまぞくプロマイドリストのlist.mdを作成
 - make_posix_cmds.sh
+  - POSIXでリストアップされている標準コマンドのリストを翻訳して出力
 - make_qiitalang_list.sh
+  - Qiita がシンタックスハイライトに対応している全言語の記事数を集計
 - my_urlize.sh
+  - Twitter用に、入力をbase64のURLに
 - ping_trace.sh
+  - `ping` コマンドの結果をわかりやすく表示
 - shchc.sh
+  - シェルチェックを簡単に
 - spd-say-rand.sh
+  - `spd-say` コマンドをランダムな声で実行
 - twaccown.sh
+  - [Ownedmedia](https://ownedmedia-library.com/)のページからtwitterアカウントIDを抽出
