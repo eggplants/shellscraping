@@ -47,8 +47,7 @@ genius() {
                  grep -oP '(?<=class="lyrics").*(?="recirculated_content")' |
                  grep -oP '(?<=<p>).*(?=<\/p>)'                             |
                  sed -zr 's/<br>/\n/g'                                      |
-                 sed -r 's/<.*?>//g'                                        |
-                 uniq
+                 sed -r 's/<.*?>//g'
 }
 
 # https://kashinavi.com/
