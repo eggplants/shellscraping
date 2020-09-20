@@ -55,7 +55,7 @@ genius() {
 kashinv() {
   curl -s "$1" | iconv -f sjis -t utf8 -c | tr -d \\n\\r         |
                  grep -oP '(?<=div align=center>).*?(?=#cccccc)' |
-                 grep -oP '(?<=>)[^<]+'|sed -z 's/：./：/'       ;
+                 grep -oP '(?<=>)[^<]+' | sed -z 's/：./：/'     ;
   curl -s "$1" | iconv -f sjis -t utf8 -c | tr -d \\n\\r         |
                  grep -oP '(?<=class="kashi").*?(?=noshade)'     |
                  grep -oP '(?<=;">).*?(?=<\/div>)'               |

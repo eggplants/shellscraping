@@ -29,7 +29,6 @@ This repository collects my scraping codes which I uploaded on [My Gist] **writt
     - https://utaten.com/
     - http://www.kget.jp/
     - https://genius.com/
-  - Unavailable sites:
     - https://kashinavi.com/
     - https://www.utamap.com/
 - makelist.sh

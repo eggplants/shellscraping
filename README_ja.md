@@ -26,7 +26,6 @@ gistに上げているスクレイピングコードのまとめを、したい�
     - https://utaten.com/
     - http://www.kget.jp/
     - https://genius.com/
-  - 未対応サイト:
     - https://kashinavi.com/
     - https://www.utamap.com/
 - makelist.sh
@@ -36,6 +35,7 @@ gistに上げているスクレイピングコードのまとめを、したい�
 - maltine-zips-download.sh
   - `maltinerecords`のDL可能全アルバム/トラックをダウンロードしZIPにまとめる
 - Ricty_on_wsl.sh
+
 - forkpull.sh
 - ikkatu_posix.sh
 - install_latest_nano_wsl.sh
