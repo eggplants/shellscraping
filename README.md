@@ -22,7 +22,8 @@ This repository collects my scraping codes which I uploaded on [My Gist] **writt
   - A LEVEL=2 version of `link-L1.sh`.
   - Extract **Archive / Track File URI** from the extracted Album pages.
 - lyric-extractor.sh
-  - Extract **lyrics from a lyrics site**
+  - Extract **lyrics from a lyrics site** by using:
+    - `grep`, `curl`, `sed`, `tr`, `iconv`, `ruby`
   - Available sites:
     - http://j-lyric.net/
     - https://www.uta-net.com/
@@ -64,7 +65,7 @@ This repository collects my scraping codes which I uploaded on [My Gist] **writt
 - spd-say-rand.sh
   - Execute the `spd-say` command in a random voice.
 - twaccown.sh
-
+  - Extract twitter account ids from Ownedmedia pages
 [日本語版READMEはこちら]: https://github.com/eggplants/shellscraping/blob/master/README_ja.md
 [My Gist]: https://gist.github.com/eggplants
 [maltinerecords]: http://maltinerecords.cs8.biz/release.html
