@@ -78,16 +78,18 @@ utamap() {
 }
 
 main() {
-  case "$1" in
-  *j-lyric.net*) j-lyric "$@" ;;
-  *uta-net.com*) uta-net "$@" ;;
-  *utaten.com*) utaten "$@" ;;
-  *kget.jp*) kget "$@" ;;
-  *genius.com*) genius "$@" ;;
-  *kashinavi.com*) kashinv "$@" ;;
-  *utamap.com*) utamap "$@" ;;
-  *) return 1 ;;
-  esac
+  for arg in "$@"; do
+    case "$arg" in
+      *j-lyric.net*) j-lyric "$arg" ;;
+      *uta-net.com*) uta-net "$arg" ;;
+      *utaten.com*) utaten "$arg" ;;
+      *kget.jp*) kget "$arg" ;;
+      *genius.com*) genius "$arg" ;;
+      *kashinavi.com*) kashinv "$arg" ;;
+      *utamap.com*) utamap "$arg" ;;
+      *) : ;;
+    esac
+  done
   return 0
 }
 
