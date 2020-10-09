@@ -49,7 +49,11 @@ _main() {
   for i in ${misc}; do
     echo -ne "Now Downloading:\n    ${i}"
     bandcamp-dl -f "${i}" 1>/dev/null 2>/dev/null
-    echo "=>finished."
+    if [[ "$?" = 0 ]]; then
+      echo "=>finished."
+    else
+      echo "=>fail."
+    fi
   done
   cd "$p" || return
   return 0
